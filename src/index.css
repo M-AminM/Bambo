@@ -1,13 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+  color: #fff;
+}
+
+.home_page {
+  background: linear-gradient(
+      0deg,
+      rgba(6, 121, 94, 0.7),
+      rgba(6, 121, 94, 0.7)
+    ),
+    url("/public/assets/home.svg");
+  background-size: cover;
+  /* Adding to media query */
+  background-position: center top;
+  height: 100vh;
+}
+
+.gradient {
+  background: linear-gradient(0, rgba(0, 68, 88, 0.5), rgba(0, 68, 88, 0.5));
+}
+
+.detail-bg {
+  background: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.gradient_about {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/public/assets/about.svg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center top;
+}
+
+.gradient_counseling {
+  background: linear-gradient(0deg, rgba(0, 68, 88, 0.5), rgba(0, 68, 88, 0.5)),
+    url("/public/assets/counseling.svg");
+  background-size: cover;
+  width: 40%;
+  height: 200px;
+}
+
+.about_box {
+  background: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  bottom: 0;
+  width: 100%;
+  height: 40%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.license_bg {
+  background: linear-gradient(to right, #004458, #09b28b);
+}
+
+.gradient_courses {
+  background: linear-gradient(0deg, rgba(0, 68, 88, 0.7), rgba(0, 68, 88, 0.7)),
+    url("/public/assets/courses.png");
+  background-size: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .gradient_counseling {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+.swiper-pagination-bullet {
+  font-weight: bold;
+  background: #004458 !important;
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  color: white;
+  width: 100px;
+  height: 100px;
 }
