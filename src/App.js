@@ -19,6 +19,15 @@ function App() {
     setMenu(false);
   }, [location]);
 
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (menu) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "";
+    }
+  }, [menu]);
+
   return (
     <Fragment>
       {location.pathname !== "/login" && location.pathname !== "/signup" && (
