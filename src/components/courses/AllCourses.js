@@ -3,6 +3,7 @@ import { courseData } from "../../data/course";
 import Footer from "../footer/Footer";
 
 const AllCourses = ({ data, setData, setIsOpen }) => {
+
   return (
     <>
       <section className="px-14 py-7 mb-10">
@@ -10,7 +11,7 @@ const AllCourses = ({ data, setData, setIsOpen }) => {
           className="flex flex-wrap text-black gap-10 "
           style={{ direction: "rtl" }}
         >
-          {courseData.map((data) => {
+          {data.map((data) => {
             return (
               <div
                 className="w-80 flex  flex-col"

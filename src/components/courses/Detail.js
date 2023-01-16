@@ -27,8 +27,11 @@ const Detail = ({ data, setIsOpen }) => {
           className="w-full h-6 flex justify-end"
           style={{ background: " #DBDBDB" }}
         >
-          <div className="bg-gray1 h-6 w-3/5 flex justify-end pl-2 text-white">
-            60%
+          <div
+            className="bg-gray1 h-6  flex justify-end pl-2 text-white"
+            style={{ width: data.percent }}
+          >
+            {data.percent}
           </div>
         </div>
       </div>

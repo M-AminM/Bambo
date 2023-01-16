@@ -18,6 +18,8 @@ const DetailPage = () => {
     "جاوا",
     "پایتون",
     "انگولار",
+    "اچ تا ام ال",
+    "سی اس اس",
   ];
 
   return (
@@ -25,7 +27,6 @@ const DetailPage = () => {
       <Hero filterData={filterData} />
       <Description filterData={filterData} />
       <Benefit filterData={filterData} courseName={courseName} />
-      
     </Fragment>
   );
 };
