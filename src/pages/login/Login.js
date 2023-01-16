@@ -51,8 +51,12 @@ const Login = () => {
           <span>رمز عبور</span>
         </div>
         <div className="flex gap-4 justify-end">
-          <button className="px-4 py-2 text-black">ثبت نام</button>
-          <button className="px-4 py-2 bg-gray1 text-white">ورود</button>
+          <Link to="/signup" className="px-4 py-2 text-black">
+            ثبت نام
+          </Link>
+          <button  className="px-4 py-2 bg-gray1 text-white">
+            ورود
+          </button>
         </div>
       </div>
     </section>

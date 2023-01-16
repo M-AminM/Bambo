@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../index.css";
 
-const Header = ({ menu, setMenu }) => {
+const Header = ({ menu, setMenu, setIsLogin }) => {
   const links = [
     { id: 1, name: "دوره ها", url: "courses" },
     { id: 2, name: "مقالات", url: "/" },
@@ -32,7 +32,7 @@ const Header = ({ menu, setMenu }) => {
         <Link className="pt-1" to="/login">
           ورود
         </Link>
-        <Link to="/signup">
+        <Link to="/login" onClick={() => setIsLogin()}>
           <button className="gradient px-6 py-2">ثبت نام</button>
         </Link>
         <img

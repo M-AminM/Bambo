@@ -37,7 +37,9 @@ const Signup = () => {
           style={{ background: "#DBDBDB" }}
         />
         <div className="flex gap-4 justify-end">
-          <button className="px-4 py-2 text-black">ورود</button>
+          <Link to="/login" className="px-4 py-2 text-black">
+            ورود
+          </Link>
           <button className="px-4 py-2 bg-gray1 text-white">ثبت نام</button>
         </div>
       </div>
