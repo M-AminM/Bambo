@@ -2,12 +2,14 @@ import React, { Fragment, useState, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Courses from "./components/courses/Courses";
 import Detail from "./components/courses/Detail";
+import FullDetail from "./components/courses/FullDetail";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Login from "./components/login/Login";
 import Signup from "./components/login/Signup";
 import Menu from "./components/menu/Menu";
 import Modal from "./Modal";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 function App() {
   const [data, setData] = useState();
@@ -27,6 +29,7 @@ function App() {
       body.style.overflow = "";
     }
   }, [menu]);
+  
 
   return (
     <Fragment>
@@ -37,7 +40,9 @@ function App() {
       <Modal open={isOpen} onClose={() => setIsOpen(false)}>
         <Detail data={data} setData={setData} setIsOpen={setIsOpen} />
       </Modal>
+      <ScrollToTop />
       <Routes>
+        
         <Route path="/" element={<Home />} />
         <Route
           path="/courses"
@@ -45,6 +50,7 @@ function App() {
             <Courses data={data} setData={setData} setIsOpen={setIsOpen} />
           }
         />
+        <Route path="/courses/:id" element={<FullDetail />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
       </Routes>

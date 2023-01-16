@@ -57,6 +57,10 @@ body {
   height: 40%;
 }
 
+.detail_box {
+  background: linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -71,6 +75,15 @@ code {
     url("/public/assets/courses.png");
   background-size: cover;
   width: 100%;
+}
+
+.full_detail {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/public/assets/full_detail.png");
+  background-size: cover;
+  /* Adding to media query */
+  background-position: center top;
+  height: 100vh;
 }
 
 @media screen and (max-width: 768px) {

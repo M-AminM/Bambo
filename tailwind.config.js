@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        "400": "400px",
-        "300": "300px"
-      }
+        400: "400px",
+        300: "300px",
+      },
     },
     colors: {
       gray1: "#004458",
@@ -23,7 +23,9 @@ module.exports = {
       bbb: "#D1D1D1",
       footerBg: "#003544",
       transparent: "transparent",
-      red: "#ff4a59"
+      red: "#ff4a59",
+      cream: "#DBDBDB",
+      midCream: "rgba(219, 219, 219, 0.3)",
     },
     screens: {
       sm: "640px",

@@ -1,7 +1,8 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "../../index.css";
 
-const Detail = ({ data }) => {
+const Detail = ({ data, setIsOpen }) => {
   return (
     <>
       <section className="text-black flex gap-10 md:flex-col ">
@@ -32,13 +33,17 @@ const Detail = ({ data }) => {
         </div>
       </div>
 
-      <div className="flex justify-end items-end pt-10">
-        <button
+      <div
+        className="flex justify-end items-end pt-10"
+        onClick={() => setIsOpen(false)}
+      >
+        <Link
+          to={`/courses/${data.url}`}
           className="w-32 px-4 py-2 text-black"
           style={{ background: " #DBDBDB" }}
         >
           مشاهده کامل
-        </button>
+        </Link>
       </div>
     </>
   );

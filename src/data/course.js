@@ -7,6 +7,8 @@ export const courseData = [
     price: "200,000 تومان",
     image: "/assets/js.svg",
     bg: "#F7E018",
+    url: "js",
+    percent: "60%",
   },
   {
     id: 2,
@@ -16,6 +18,8 @@ export const courseData = [
     price: "200,000 تومان",
     image: "/assets/c_sharp.png",
     bg: "#6A1577",
+    url: "cSharp",
+    percent: "60%",
   },
   {
     id: 3,
@@ -25,6 +29,8 @@ export const courseData = [
     price: "200,000 تومان",
     image: "/assets/sass.svg",
     bg: "#FFC7F8",
+    url: "sass",
+    percent: "60%",
   },
   {
     id: 4,
@@ -34,6 +40,8 @@ export const courseData = [
     price: "200,000 تومان",
     image: "/assets/react.svg",
     bg: "#0780A1",
+    url: "react",
+    percent: "60%",
   },
   {
     id: 5,
@@ -43,6 +51,8 @@ export const courseData = [
     price: "200,000 تومان",
     image: "/assets/bootstrap.svg",
     bg: "#CAB2EF",
+    url: "bootstrap",
+    percent: "60%",
   },
   {
     id: 6,
@@ -52,6 +62,8 @@ export const courseData = [
     price: "200,000 تومان",
     image: "/assets/java.svg",
     bg: "#1D195E",
+    url: "java",
+    percent: "30%",
   },
   {
     id: 7,
@@ -61,6 +73,8 @@ export const courseData = [
     price: "200,000 تومان",
     image: "/assets/python.svg",
     bg: "#6BDBB9",
+    url: "python",
+    percent: "60%",
   },
   {
     id: 8,
@@ -70,5 +84,7 @@ export const courseData = [
     price: "200,000 تومان",
     image: "/assets/angular.svg",
     bg: "#FFC7F8",
+    url: "angular",
+    percent: "60%",
   },
 ];
