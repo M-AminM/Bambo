@@ -2,7 +2,7 @@ import React from "react";
 
 const Courses = () => {
   return (
-    <section className="flex w-full relative lg:flex-col">
+    <section className="flex w-full relative lg:flex-col gap-20">
       <div
         className="w-1/2 flex justify-center items-center lg:w-full"
         style={{ height: "80vh" }}
