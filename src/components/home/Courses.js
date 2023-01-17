@@ -53,7 +53,7 @@ const Courses = () => {
         </div>
       </div>
 
-      <div className="w-1/2 border-b-2 border-r-2 border-bbb w-96 h-96 flex justify-center flex-col pr-10 lg:p-4 lg:w-full lg:border-hidden mb-10 relative">
+      <div className="w-1/2 border-b-2 border-r-2 border-bbb  h-96 flex justify-center flex-col pr-10 lg:p-4 lg:w-full lg:border-hidden mb-10 relative">
         <h2 className="text-black text-4xl" style={{ color: "#004458" }}>
           دوره های آموزشی
         </h2>

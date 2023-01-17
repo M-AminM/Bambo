@@ -48,13 +48,13 @@ const Footer = () => {
             <span>خدمات</span>
           </div>
           <div className="flex gap-10 justify-center items-center">
-            <div className="p-4 bg-white w-24 h-28">
-              <img src="/assets/footer1.svg" />
+            <div className="px-8 py-4 flex justify-center items-center bg-white ">
+              <img className="w-12" src="/assets/footer1.svg" />
             </div>
-            <div className="p-4 bg-white w-24 h-28">
+            <div className="p-4 bg-white w-24 ">
               <img src="/assets/footer2.svg" />
             </div>
-            <div className="p-4 bg-white w-24 h-28">
+            <div className="p-4 bg-white w-24 ">
               <img src="/assets/footer3.svg" />
             </div>
           </div>
