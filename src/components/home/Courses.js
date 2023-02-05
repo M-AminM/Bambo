@@ -4,8 +4,8 @@ const Courses = () => {
   return (
     <section className="flex w-full relative lg:flex-col gap-20">
       <div
-        className="w-1/2 flex justify-center items-center lg:w-full"
-        style={{ height: "80vh" }}
+        className="w-1/2 flex justify-center items-center h-screen lg:w-full lg:h-[50vh]"
+        // style={{ height: "80vh" }}
       >
         <div className="border-2 border-green w-96 h-96 relative lg:w-72 lg:h-72">
           <div

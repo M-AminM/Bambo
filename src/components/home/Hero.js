@@ -2,15 +2,15 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="home_page py-2.5 px-14 md:px-7">
-      {/* <Header /> */}
+    <section className="home_page ">
       <div
-        className="flex flex-col justify-end gap-10"
-        style={{ height: "70vh" }}
+        className="flex flex-col justify-end gap-6 py-2.5 px-14 md:px-7"
+        style={{ height: "80vh" }}
       >
         <h1 className="font-bold text-5xl md:text-2xl">
           باید راه بهتری برای آموزش ساخته میشد,
-          <p className="pt-4">پس ما ساختیمش ...</p>
+          <br />
+          پس ما ساختیمش ...
         </h1>
         <p className="w-2/5 md:w-full">
           سایت بامبو با هدف تولید و انتشار محتوای باکیفیت آموزشی و همچنین آشنایی
@@ -22,7 +22,8 @@ const Hero = () => {
           مشاهده دوره ها
         </button>
       </div>
-      <div className="flex pt-10">
+
+      <div className="flex w-full pt-10 absolute bottom-0">
         <button>
           <img
             className="w-8 h-full gradient pr-2"
